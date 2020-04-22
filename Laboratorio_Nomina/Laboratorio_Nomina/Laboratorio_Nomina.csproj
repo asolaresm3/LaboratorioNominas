@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A264C25-8319-4115-8C13-61F6D09A0A13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Laboratorio_Nomina</RootNamespace>
+    <AssemblyName>Laboratorio_Nomina</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CapaDeDiseno">
+      <HintPath>..\navegador\NAV2K19-Ivan-JoseDicotomicos\DLL\Navegador\CapaDeDiseno\bin\Debug\CapaDeDiseno.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaDeLogica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consultas\Consulta_Departamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Consulta_Departamento.Designer.cs">
+      <DependentUpon>Consulta_Departamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Consulta_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Consulta_Empleado.Designer.cs">
+      <DependentUpon>Consulta_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Consulta_Puesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Consulta_Puesto.Designer.cs">
+      <DependentUpon>Consulta_Puesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\Consulta_Concepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\Consulta_Concepto.designer.cs">
+      <DependentUpon>Consulta_Concepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Mant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Mant.Designer.cs">
+      <DependentUpon>Frm_Mant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_Mant_Concepto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_Mant_Concepto.designer.cs">
+      <DependentUpon>Frm_Mant_Concepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_Mant_Departamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_Mant_Departamento.Designer.cs">
+      <DependentUpon>Frm_Mant_Departamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_Mant_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_Mant_Empleado.Designer.cs">
+      <DependentUpon>Frm_Mant_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_Mant_Puesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Frm_Mant_Puesto.Designer.cs">
+      <DependentUpon>Frm_Mant_Puesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Consultas\Consulta_Departamento.resx">
+      <DependentUpon>Consulta_Departamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Consulta_Empleado.resx">
+      <DependentUpon>Consulta_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Consulta_Puesto.resx">
+      <DependentUpon>Consulta_Puesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\Consulta_Concepto.resx">
+      <DependentUpon>Consulta_Concepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Mant.resx">
+      <DependentUpon>Frm_Mant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_Mant_Concepto.resx">
+      <DependentUpon>Frm_Mant_Concepto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_Mant_Departamento.resx">
+      <DependentUpon>Frm_Mant_Departamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_Mant_Empleado.resx">
+      <DependentUpon>Frm_Mant_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Frm_Mant_Puesto.resx">
+      <DependentUpon>Frm_Mant_Puesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa_Datos\Capa_Datos.csproj">
+      <Project>{933dd1a2-c540-4ef2-93df-30b191fa15f4}</Project>
+      <Name>Capa_Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa_Logica\Capa_Logica.csproj">
+      <Project>{4f3c77a3-0f86-485b-8c4d-a7a6e44f89f8}</Project>
+      <Name>Capa_Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_cafe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_cafe1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Procesos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
