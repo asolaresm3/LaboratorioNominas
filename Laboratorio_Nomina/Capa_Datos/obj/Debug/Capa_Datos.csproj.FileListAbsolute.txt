@@ -1,0 +1,6 @@
+C:\Users\Angel Solares\Desktop\Laboratorio_Nomina\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\Angel Solares\Desktop\Laboratorio_Nomina\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\Angel Solares\Desktop\Laboratorio_Nomina\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Angel Solares\Desktop\Laboratorio_Nomina\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\Angel Solares\Desktop\Laboratorio_Nomina\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\Angel Solares\Desktop\Laboratorio_Nomina\Capa_Datos\obj\Debug\Capa_Datos.csprojAssemblyReference.cache
